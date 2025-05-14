@@ -22,10 +22,12 @@ describe('MainContent', () => {
     expect(screen.getByTestId('help-area')).toBeInTheDocument();
   });
 
-   it('Add just second test', async () => {
+  it('Add just second test', async () => {
     render(<MainContent />);
     const button = screen.getByRole('button');
     await userEvent.click(button);
     expect(screen.getByTestId('help-area')).toBeInTheDocument();
   });
+
+  it('Second Test', async () => {});
 });
