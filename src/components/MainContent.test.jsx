@@ -21,4 +21,11 @@ describe('MainContent', () => {
     await userEvent.click(button);
     expect(screen.getByTestId('help-area')).toBeInTheDocument();
   });
+
+   it('Add just another test', async () => {
+    render(<MainContent />);
+    const button = screen.getByRole('button');
+    await userEvent.click(button);
+    expect(screen.getByTestId('help-area')).toBeInTheDocument();
+  });
 });
