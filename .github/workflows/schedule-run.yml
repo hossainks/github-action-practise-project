@@ -1,4 +1,4 @@
-name: Deployment
+name: On Scdedule
 on:
   schedule:
     - cron: '30 4 * * *' # Every day at midnight
